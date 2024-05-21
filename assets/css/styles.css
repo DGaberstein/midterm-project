@@ -38,8 +38,6 @@ footer {
   max-width: 1063px;
   margin: auto;
 }
-
-/* ------------------------------------------------------------------------ */
 /* -------- image-auto-scaling 3 in one --------- */
 body, html {
   margin: 0;
@@ -67,22 +65,18 @@ body, html {
 .small-image {
   position: absolute;
   width: 100px;
-  height: auto;
+  height: 100px;
   background-color: rgb(0, 0, 0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 30px;
+  padding: 5px;
 }
 .top-right {
-  top: 10px;
-  right: 10px;
+  margin-right: 10px;
 }
 .bottom-left {
-  bottom: 10px;
-  left: 10px;
+  margin-left: 10px;
 }
-/* ------------------------------------------------------------------------ */
-
 /* ------------------------------ Splash page ------------------------------ */
 .splash {
   position: fixed;
@@ -94,7 +88,6 @@ body, html {
   z-index: 200;
   background-color: #000000;
 }
-
 .splash.display-none {
   position: fixed;
   top: 0;
@@ -107,7 +100,6 @@ body, html {
   background-color: #000000;
   transition: all 1s;
 }
-
 .splash h1 {
   font-size: 2em;
   position: fixed;
@@ -116,31 +108,25 @@ body, html {
   background-color: transparent;
   color: var(--primary);
 }
-
 @keyframes fadeIn {
   to {
     opacity: 0;
   }
 }
-
 @keyframes goUp {
   from {
     transform: translate3d(0, 90px, 0);
   }
 }
-
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards, goUp 0.5s ease-in forwards;
 }
-
 /* ------ CIRCULAR ANIMATION ------ */
-
 .circle2 {
   position: fixed;
   display: inline;
 }
-
 .outer-circle {
   position: absolute;
   top: 24vh;
@@ -150,7 +136,6 @@ body, html {
   border-radius: 50%;
   background: var(--secondaryDark);
 }
-
 .inner-circle {
   position: absolute;
   top: calc(24vh + var(--circular-line-width));
@@ -160,103 +145,86 @@ body, html {
   background-color: #000000;
   border-radius: 50%;
 }
-
 .box {
   position: absolute;
   height: calc(var(--diameter) / 2);
   width: calc(var(--diameter) / 2);
   background: #000000;
 }
-
 .box-top-left {
   left: 35vw;
   top: 24vh;
   transform-origin: 100% 100%;
   animation: show-top-left 0.5s linear forwards;
 }
-
 .box-bottom-left {
   left: 35vw;
   top: calc(24vh + var(--diameter) / 2);
   transform-origin: 100% 0;
   animation: show-bottom-left 0.5s linear 0.5s forwards;
 }
-
 .box-bottom-right {
   left: calc(35vw + var(--diameter) / 2);
   top: calc(24vh + var(--diameter) / 2);
   transform-origin: 0 0;
   animation: show-bottom-right 0.5s linear 1s forwards;
 }
-
 .box-top-right {
   top: 24vh;
   left: calc(35vw + var(--diameter) / 2);
   transform-origin: 0 100%;
   animation: show-top-right 0.5s linear 1.5s forwards;
 }
-
 @keyframes show-top-left {
   0% {
     transform: skewX(0deg);
   }
-
   99.9% {
     height: calc(var(--diameter) / 2);
     width: calc(var(--diameter) / 2);
   }
-
   100% {
     height: 0;
     width: 0;
     transform: skewX(90deg);
   }
 }
-
 @keyframes show-bottom-left {
   0% {
     transform: skewY(0deg);
   }
-
   99.9% {
     height: calc(var(--diameter) / 2);
     width: calc(var(--diameter) / 2);
   }
-
   100% {
     height: 0;
     width: 0;
     transform: skewY(-90deg);
   }
 }
-
 @keyframes show-bottom-right {
   0% {
     transform: skewX(0deg);
   }
-
   99.9% {
     height: calc(var(--diameter) / 2);
     width: calc(var(--diameter) / 2);
   }
-
   100% {
     height: 0;
     width: 0;
     transform: skewX(90deg);
   }
 }
-
 @keyframes show-top-right {
   0% {
     transform: skewY(0deg);
   }
-
   99.9% {
     height: calc(var(--diameter) / 2);
     width: calc(var(--diameter) / 2);
   }
-
   100% {
     height: 0;
     width: 0;
@@ -271,7 +239,6 @@ nav {
   align-items: center;
   margin: 75px auto;
 }
-
 .nav-links a {
   text-decoration: none;
   color: #6c718b;
@@ -279,12 +246,10 @@ nav {
   font-size: 1.05rem;
   margin: 0 14px 0 14px;
 }
-
 .nav-links a:hover {
   color: #0082f3;
   cursor: pointer;
 }
-
 .btn-blue {
   background-color: #072ac8;
   color: white;
@@ -293,7 +258,6 @@ nav {
   padding: 16px;
   text-decoration: none;
 }
-
 .link {
   text-decoration: none;
   color: #6c718b;
@@ -301,11 +265,9 @@ nav {
   font-size: 1.05rem;
   margin: 0 14px 0 14px;
 }
-
 .btn-blue:hover {
   background-color: #292e47;
 }
-
 /* ------------------------------ Header ------------------------------ */
 #main {
   width: 80vw;
@@ -313,16 +275,13 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
 #main > div {
   width: 46%;
 }
-
 .txt-block h1 {
   font-size: 3.9rem;
   color: #292e47;
 }
-
 .btns-top-container {
   width: 100%;
   display: flex;
@@ -332,7 +291,6 @@ nav {
   margin: 0;
   padding: 0;
 }
-
 .txt-block p {
   font-size: 1.3rem;
   color: #6b708d;
@@ -340,15 +298,12 @@ nav {
   line-height: 150%;
   margin: 30px 0 50px 0;
 }
-
 #img-block {
   position: relative;
 }
-
 #main-img {
   width: 100%;
 }
-
 #credit-card-img {
   position: absolute;
   left: -19%;
@@ -357,7 +312,6 @@ nav {
   bottom: auto;
   max-width: 57%;
 }
-
 #project-accepted-img {
   position: absolute;
   left: auto;
@@ -367,16 +321,13 @@ nav {
   max-width: 57%;
   z-index: 999;
 }
-
 /* ------------------------------ Recent projects ------------------------------ */
 .title {
   margin: 100px 0 75px 0;
 }
-
 .title h2 {
   font-size: 2.5rem;
 }
-
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -384,71 +335,57 @@ nav {
   grid-column-gap: 25px;
   grid-row-gap: 0px;
 }
-
 .project {
   background-color: 6c718b;
   padding-bottom: 20px;
 }
-
 .project img {
   width: 100%;
   height: 240px;
 }
-
 .project h3 {
   font-size: 1.3rem;
   margin: 27px;
 }
-
 .project p {
   font-size: 1.1rem;
   margin: 0 27px 27px 27px;
 }
-
 .project a {
   text-decoration: none;
   font-weight: 500;
   color: #fff700;
   margin: 0 27px 27px 27px;
 }
-
-/* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
-/* ----------------------------------------------------------------------------- */
 
 /* ------------------------------ Form ------------------------------ */
 .form-container form {
   display: flex;
   flex-direction: column;
 }
-
 .email-phone {
   display: flex;
   justify-content: space-between;
 }
-
 .email-phone div {
   width: 49.5%;
   display: flex;
   flex-direction: column;
 }
-
 #contact-main,
 #project-main {
   padding: 0 14px 0 14px;
 }
-
 #contact-main .txt-title h1 {
   padding-bottom: 70px;
 }
-
 label {
   font-size: 1.2rem;
   font-weight: 400;
   color: #0026ff;
   margin-bottom: 10px;
 }
-
 input {
   border: 0;
   background-color: rgba(107, 112, 141, 0.1);
@@ -458,7 +395,6 @@ input {
   padding-left: 15px;
   margin-bottom: 24px;
 }
-
 textarea {
   border: 0;
   background-color: rgba(255, 255, 255, 0.1);
@@ -469,7 +405,6 @@ textarea {
   padding-left: 15px;
   margin-bottom: 24px;
 }
-
 .btn-submit {
   background-color: #072ac8;
   color: white;
@@ -478,7 +413,6 @@ textarea {
   padding: 25px;
   text-decoration: none;
 }
-
 .btn-submit:hover {
   background-color: #0b1e7d;
 }
@@ -500,7 +434,6 @@ textarea {
     padding: 0 30px 15px 30px;
     height: 80px;
   }
-
   /* ------------------------------ Header ------------------------------ */
   #main {
     display: flex;
@@ -537,12 +470,10 @@ textarea {
     max-width: 34%;
     z-index: 999;
   }
-
   /* ------------------------------ Partners ------------------------------ */
   .client {
     overflow: visible;
   }
-
   .marquee-content {
     display: flex;
     flex-wrap: wrap;
@@ -553,16 +484,13 @@ textarea {
     margin: auto;
     gap: 2rem;
   }
-
   .img-client {
     filter: grayscale(0);
     width: 7rem;
   }
-
   #hide {
     display: none;
   }
-
   /* ---------------------------- Recent projects ---------------------------- */
   .projects-container {
     display: grid;
@@ -575,7 +503,6 @@ textarea {
   .title {
     margin-left: 30px;
   }
-
   /* ------------------------------ Client reviews ------------------------------ */
   .memoji-1,
   .memoji-2,
@@ -597,7 +524,6 @@ textarea {
     color: #292e47;
   }
 }
-
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
   /* ------------------------------ Header ------------------------------ */
@@ -609,7 +535,6 @@ textarea {
     font-size: 2.6rem;
     color: #292e47;
   }
-
   /* ----------------------------- Recent projects ----------------------------- */
   .projects-container {
     display: grid;
@@ -619,7 +544,6 @@ textarea {
     grid-row-gap: 44px;
     margin: 0 44px 0 44px;
   }
-
   /* ------------------------------ Client reviews ------------------------------ */
   .memoji-1,
   .memoji-2,
@@ -637,7 +561,6 @@ textarea {
     font-size: 1.7rem;
     margin: 40px 0 40px 0;
   }
-
   /* ------------------------------ Services ------------------------------ */
   .services-container {
     display: grid;
@@ -647,7 +570,6 @@ textarea {
     grid-row-gap: 44px;
     margin: 0 44px 0 44px;
   }
-
   /* ------------------------------ Questions form ------------------------------ */
   .email-subscribe {
     display: flex;
@@ -665,11 +587,9 @@ textarea {
     background-color: white;
     padding-left: 50px;
   }
-
   .email-subscribe {
     width: 56%;
   }
-
   #email-sub-btn {
     background-color: #072ac8;
     color: white;
@@ -683,7 +603,6 @@ textarea {
   .title-subscribe h2 {
     font-size: 1.8rem;
   }
-
   /* ------------------------------ Footer ------------------------------ */
   footer {
     display: flex;
@@ -706,7 +625,6 @@ textarea {
     flex-direction: column;
     justify-content: space-between;
   }
-
   .email-phone div {
     width: 100%;
     display: flex;
@@ -721,7 +639,6 @@ textarea {
     font-size: 1.2rem;
   }
 }
-
 /* ------------------------------ Smaller than 475px (small mobiles) ------------------------------ */
 @media (max-width: 475px) {
   .txt-block h1 {
@@ -745,20 +662,16 @@ textarea {
   .subtitle h3 {
     font-size: 1rem;
   }
-
   .img-client {
     width: 5rem;
   }
-
   .marquee-content a {
     width: 30vw;
   }
-
   #hide2 {
     display: none;
   }
 }
-
 /* ------------------------------ Hamburguer menu ------------------------------ */
 .menu {
   display: none;
@@ -768,12 +681,10 @@ textarea {
   padding: 0;
   z-index: 999;
 }
-
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
 }
-
 .menu-button-container {
   display: none;
   height: 100%;
@@ -783,11 +694,9 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-
 #menu-toggle {
   display: none;
 }
-
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -799,31 +708,25 @@ textarea {
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
-
 .menu-button::before {
   content: "";
   margin-top: -8px;
 }
-
 .menu-button::after {
   content: "";
   margin-top: 8px;
 }
-
 #menu-toggle:checked + .menu-button-container .menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
 }
-
 #menu-toggle:checked + .menu-button-container .menu-button {
   background: rgba(255, 255, 255, 0);
 }
-
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-
 @media (max-width: 990px) {
   .menu-button-container {
     display: flex;
@@ -875,7 +778,6 @@ textarea {
     color: #0082f3;
   }
 }
-
 /* ------------------------------ Alert ------------------------------ */
 .alert-wrong {
   display: none;
@@ -887,7 +789,6 @@ textarea {
   top: 0;
   width: 100%;
 }
-
 .alert {
   display: none;
   padding: 20px;
@@ -898,7 +799,6 @@ textarea {
   top: 0;
   width: 100%;
 }
-
 .closebtn {
   margin-left: 15px;
   color: white;
@@ -909,7 +809,6 @@ textarea {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .closebtn:hover {
   color: black;
 }
@@ -944,13 +843,11 @@ footer {
   overflow: hidden;
   margin-top: 100px;
 }
-
 .marquee-content {
   display: flex;
   height: 100%;
   animation: scrolling 20s linear infinite;
 }
-
 @keyframes scrolling {
   0% {
     transform: translateX(0);
@@ -959,7 +856,6 @@ footer {
     transform: translateX(-140vw);
   }
 }
-
 .marquee-content a {
   width: 20vw;
   flex-shrink: 0;
@@ -968,13 +864,11 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
 .img-client {
   margin: 0 auto;
   filter: grayscale(1);
   width: 10rem;
 }
-
 .img-client:hover {
   filter: grayscale(0);
 }
