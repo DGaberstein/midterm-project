@@ -52,7 +52,7 @@ footer {
   max-width: 100vw;
   height: 100vh;
   z-index: 200;
-  background-color: #f2f4fc;
+  background-color: #000000;
 }
 
 .splash.display-none {
@@ -64,7 +64,7 @@ footer {
   max-width: 1200px;
   height: 100vh;
   z-index: -10;
-  background-color: #f2f4fc;
+  background-color: #000000;
   transition: all 1s;
 }
 
@@ -117,7 +117,7 @@ footer {
   left: calc(35vw + var(--circular-line-width));
   height: calc(var(--diameter) - 2 * var(--circular-line-width));
   width: calc(var(--diameter) - 2 * var(--circular-line-width));
-  background-color: #f2f4fc;
+  background-color: #000000;
   border-radius: 50%;
 }
 
@@ -125,7 +125,7 @@ footer {
   position: absolute;
   height: calc(var(--diameter) / 2);
   width: calc(var(--diameter) / 2);
-  background: #f2f4fc;
+  background: #000000;
 }
 
 .box-top-left {
@@ -346,7 +346,7 @@ nav {
 }
 
 .project {
-  background-color: white;
+  background-color: 6c718b;
   padding-bottom: 20px;
 }
 
@@ -368,7 +368,7 @@ nav {
 .project a {
   text-decoration: none;
   font-weight: 500;
-  color: #072ac8;
+  color: #fff700;
   margin: 0 27px 27px 27px;
 }
 
@@ -405,7 +405,7 @@ nav {
 label {
   font-size: 1.2rem;
   font-weight: 400;
-  color: #6b708d;
+  color: #0026ff;
   margin-bottom: 10px;
 }
 
@@ -421,7 +421,7 @@ input {
 
 textarea {
   border: 0;
-  background-color: rgba(107, 112, 141, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   height: 200px;
   font-weight: 400;
   font-size: 1.1rem;
@@ -440,17 +440,15 @@ textarea {
 }
 
 .btn-submit:hover {
-  background-color: #292e47;
+  background-color: #0b1e7d;
 }
-
-/* --------------------------------------------------------------------------- */
-/* ------------------------------ MEDIA QUERIES ------------------------------ */
-/* --------------------------------------------------------------------------- */
-
 /* ------------------------- Smaller than 990px (tablet) ------------------------- */
 @media (max-width: 990px) {
   /* ------------------------------ Splash ------------------------------ */
-  .splash {
+  .splash-dark {
+    background-color: #000;
+  }
+  .display-none {
     display: none;
   }
   /* ------------------------------ Navbar ------------------------------ */
@@ -893,9 +891,50 @@ header {
 main {
   padding: 20px;
 }
-/* ------------------------------ Style for the footer------------------------------ */
+/* ------------------------------ Style for the footer ------------------------------ */
 footer {
   background-color: #444;
   padding: 10px;
   text-align: center;
+}
+/* ------------------------------ Moving stuff ------------------------------ */
+.client {
+  width: 97vw;
+  height: 20vh;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+.marquee-content {
+  display: flex;
+  height: 100%;
+  animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-140vw);
+  }
+}
+
+.marquee-content a {
+  width: 20vw;
+  flex-shrink: 0;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-client {
+  margin: 0 auto;
+  filter: grayscale(1);
+  width: 10rem;
+}
+
+.img-client:hover {
+  filter: grayscale(0);
 }

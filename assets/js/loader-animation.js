@@ -3,11 +3,12 @@
 // Using a bit of JS let's afd the 'ddisplay-none' class ffrom our css file using a window.object method+eventListener
 
 const removeSplashAnimation = () => {
-    const splash = document.querySelector(".splash");
-    setTimeout(() => {
-      // body off anon func
-      splash.classList.add("display-none");
-    }, 2000);
-  };
-  
-  document.addEventListener("DOMContentLoaded", removeSplashAnimation);
+  const splash = document.querySelector(".splash");
+  const content = document.querySelector(".content");
+  setTimeout(() => {
+    splash.classList.add("display-none");
+      content.classList.add("show");
+  }, 2000);
+};
+
+document.addEventListener("DOMContentLoaded", removeSplashAnimation);
