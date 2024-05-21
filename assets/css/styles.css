@@ -40,9 +40,28 @@ footer {
 }
 
 /* ------------------------------------------------------------------------ */
-/* ------------------------------ INDEX html ------------------------------ */
+/* -------- /assets/images/hero-section/hero-image.png auto-scale --------- */
 /* ------------------------------------------------------------------------ */
-
+html, body {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+.image-auto-scaling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+.image-auto-scaling img {
+  max-width: auto;
+  max-height: auto;
+  width: 50%;
+  height: 50%;
+}
 /* ------------------------------ Splash page ------------------------------ */
 .splash {
   position: fixed;
