@@ -58,9 +58,11 @@ body, html {
   height: 80vh;
 }
 .central-image {
-  width: 100%;
+  width: 600px;
   height: auto;
   border-radius: 50%;
+  text-align: center;
+  margin-top: 20px;
 }
 .small-image {
   position: absolute;
