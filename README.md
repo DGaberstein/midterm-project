@@ -1,5 +1,12 @@
 # midterm-project
 
+<details open>
+<summary>About me</summary>
+
+* <li> <a href="twitter.com/DGaberstein" rel="nofollow">Twitter @DGaberstein</a> :shipit:</li>
+
+
+</details>
 <div>
   <h1>About me</h1>
   <p>Author</p>
