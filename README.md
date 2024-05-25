@@ -20,12 +20,7 @@
 
 <details close>
 <summary>Screenshots of the Website</summary>
-<img
-              loading="lazy"
-              src="https://myoctocat.com/assets/images/base-octocat.svg"
-              alt="logo airbnb"
-              
-          />
+<img src="https://myoctocat.com/assets/images/base-octocat.svg">
 </details>
 
 
