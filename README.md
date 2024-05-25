@@ -20,7 +20,7 @@
 
 <details close>
 <summary>Screenshots of the Website</summary>
-<img src="https://myoctocat.com/assets/images/base-octocat.svg">
+<img src="https://myoctocat.com/assets/images/base-octocat.svg" style="width: 250px; height: 300px;">
 </details>
 
 
