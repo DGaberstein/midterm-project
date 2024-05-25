@@ -4,7 +4,7 @@
   <h1>About me</h1>
   <p>Author</p>
   <ul>
-    <li>Author <a href="twitter.com/DGaberstein" rel="nofollow">Twitter @DGaberstein</a> :shipit:</li>
+    <li> <a href="twitter.com/DGaberstein" rel="nofollow">Twitter @DGaberstein</a> :shipit:</li>
   </ul>
 </div>
 
