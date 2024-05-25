@@ -46,7 +46,7 @@ There is alot what i have learnd so...
 
 
 <details close>
-<summary>About me</summary>
+<summary>GITHUB</summary>
 <li> <a href="" rel="nofollow">git add . && git commit -m "enter message here" && git push origin main</a> :shipit:</li>
 </details>
 
