@@ -22,8 +22,11 @@
 <summary>Screenshots of the Website</summary>
 <img
               loading="lazy"
-              src=".https://myoctocat.com/assets/images/base-octocat.svg"
+              src="https://myoctocat.com/assets/images/base-octocat.svg"
               alt="logo airbnb"
               
           />
 </details>
+
+
+git add . && git commit -m "enter message here" && git push origin main
