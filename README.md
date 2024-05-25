@@ -10,7 +10,7 @@
 
 <details close>
 <summary>Lessons Learned</summary>
-
+There is alot what i have learnd so...
 </details>
 
 <details close>
@@ -24,4 +24,29 @@
 </details>
 
 
-git add . && git commit -m "enter message here" && git push origin main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details close>
+<summary>About me</summary>
+<li> <a href="" rel="nofollow">git add . && git commit -m "enter message here" && git push origin main</a> :shipit:</li>
+</details>
+
