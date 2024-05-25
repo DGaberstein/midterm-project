@@ -2,7 +2,7 @@
 
 <details close>
 <summary>About me</summary>
-* <li> <a href="twitter.com/DGaberstein" rel="nofollow">Twitter @DGaberstein</a> :shipit:</li>
+<li> <a href="twitter.com/DGaberstein" rel="nofollow">Twitter @DGaberstein</a> :shipit:</li>
 </details>
 
 ![X](https://img.shields.io/badge/X-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)
