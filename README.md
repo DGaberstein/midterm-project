@@ -23,8 +23,4 @@ There is alot what i have learnd so...
 <img src="https://myoctocat.com/assets/images/base-octocat.svg" style="width: 250px; height: 300px;">
 </details>
 
-<details close>
-<summary>GITHUB</summary>
-<li> <a href="" rel="nofollow">git add . && git commit -m "enter message here" && git push origin main</a> :shipit:</li>
-</details>
 
